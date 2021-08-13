@@ -10,6 +10,7 @@ var rl = createInterface({
 console.log('create <fileName> <text> | history | undo | redo | exit');
 rl.prompt();
 
+
 rl.on('line', input => {
 
     var [ commandText, ...remaining ] = input.split(' ')
